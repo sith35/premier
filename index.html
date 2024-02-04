@@ -8,10 +8,22 @@
         </title>
     </head>
     <body>
-        essai
         <h1>
-            petit site
+            "CPS test"
         </h1>
-         <b> pas d'idee </b>
+
+
+
+        <input type="button" value="clique" onclick="plus()">
+        <p>Nombre de clique = <span id="span1">0</span></p>
+        <script>
+            var v1 = 0;
+            function plus(){
+                v1+=1;
+                document.getElementById('span1').textContent = v1;
+            }
+        </script>
+       
+        
     </body>
 </html>
