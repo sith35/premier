@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <FONT face="arial">
         <meta charset="utf-8> 
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>
@@ -14,16 +15,35 @@
 
 
 
-        <input type="button" value="clique" onclick="plus()">
-        <p>Nombre de clique = <span id="span1">0</span></p>
+            <p>
+                <input type="button" value="clique" onclick="plus()">
+            </p>
+           
+                <p>
+                    Nombre de clique = <span id="span1">0</span>
+                </p>
+                cps = <span id = "span3">0</span>
         <script>
             var v1 = 0;
             function plus(){
                 v1+=1;
                 document.getElementById('span1').textContent = v1;
             }
+            let t = 0
+            setInterval(timer,1000)
+            function timer(){
+                t = t+1
+                document.getElementById('span2').textContent = t
+            }
+            setInterval(cps,1)
+            function cps(){
+                let cps = v1/t
+                document.getElementById('span3').textContent = cps
+
+            }
         </script>
        
-        
+       </FONT> 
     </body>
 </html>
+
